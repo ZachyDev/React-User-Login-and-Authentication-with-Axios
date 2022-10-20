@@ -54,7 +54,8 @@ function Register() {
               Sign up
             </button>
             <p>Have an account?</p>
-            
+            <Link to='/login'>Login</Link>
+
         </form>
     </div>
   )
