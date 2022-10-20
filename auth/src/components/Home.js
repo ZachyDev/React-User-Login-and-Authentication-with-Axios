@@ -15,7 +15,7 @@ function Home() {
   }
   return (
     <>
-    <div>Welcome {user.email}</div>
+    <div>Welcome { user.email }</div>
     <Button variant='danger' onClick={logoutUser}>Logout</Button>
     </>
   )
