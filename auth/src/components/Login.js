@@ -18,7 +18,7 @@ function Login() {
         setPassword(e.target.value);
     }
     // login
-    const Login = e => {
+    const loginUser = e => {
         e.preventDefault();
         signInWithEmailAndPassword(auth,username,password)
             .then(auth => {
@@ -44,7 +44,7 @@ function Login() {
             placeholder='Enter password'
             onChange={handlePassword}
             />
-            <button type='submit' onClick={Login}>Login</button>
+            <button type='submit' onClick={loginUser}>Login</button>
             <p>Don't have an account?</p>
             <Link to='/register'>Create account</Link>
         </form>
