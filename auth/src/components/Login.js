@@ -22,8 +22,6 @@ function Login() {
         e.preventDefault();
         signInWithEmailAndPassword(auth,username,password)
             .then(auth => {
-                console.log(auth);
-                alert('Login successful');
                 navigate('/home');
             })
             .catch(err => alert(err.message));

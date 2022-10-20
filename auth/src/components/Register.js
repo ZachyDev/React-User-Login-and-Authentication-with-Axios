@@ -23,8 +23,6 @@ function Register() {
     e.preventDefault();
     createUserWithEmailAndPassword(auth,username,password)
       .then(auth => {
-        console.log(auth);
-        alert('Account has been created,redirecting to login...');
         navigate('/login');
       })
       .catch(err => alert(err.message));
