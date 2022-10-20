@@ -19,7 +19,7 @@ function Register() {
     setPassword(e.target.value);
   }
   // Register
-  const Register = e => {
+  const registerUser = e => {
     e.preventDefault();
     createUserWithEmailAndPassword(auth,username,password)
       .then(auth => {
@@ -47,7 +47,7 @@ function Register() {
             />
             <button
              type='submit'
-             onClick={Register}
+             onClick={registerUser}
              >
               Sign up
             </button>
